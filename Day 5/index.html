@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student admission form</title>
+  </head>
+  <body>
+    <h2>Student Admission Form</h2>
+
+    <form>
+      <label>Name:</label>
+      <input
+        type="text"
+        name="fullname"
+        placeholder="Enter ur name"
+        required
+      /><br /><br />
+
+      <label>Email:</label>
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      /><br /><br />
+
+      <label>Password:</label>
+      <input
+        type="password"
+        name="password"
+        placeholder="Enter password"
+        required
+      /><br /><br />
+
+      <label>Date of Birth:</label>
+      <input type="date" name="dob" required /><br /><br />
+
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" placeholder="tel number" /><br /><br />
+
+      <label>Age:</label>
+      <input type="number" name="age" min="10" max="60" required /><br /><br />
+
+      <label>Gender:</label>
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option></select
+      ><br /><br />
+
+      <label>Blood Group:</label>
+      <select name="bloodgroup" required>
+        <option value="">--Select Blood Group--</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option></select
+      ><br /><br />
+
+      <label>Nationality:</label>
+      <select name="nationality" required>
+        <option value="">Select Nationality</option>
+        <option value="Indian">Indian</option>
+        <option value="USA">USA</option>
+        <option value="japan">japan</option>
+        <option value="UAE">UAE</option>
+        <option>Other</option></select
+      ><br /><br />
+
+      <label>Upload Photo:</label>
+      <input type="file" name="photo" accept="image/*" required /><br /><br />
+
+      <label>Upload birth Certificates:</label>
+      <input
+        type="file"
+        name="certificates"
+        accept=".pdf,.jpg,.png"
+        multiple
+      /><br /><br />
+
+      <label>Parent/Guardian Type:</label>
+      <input type="checkbox" name="guardian" value="Father" /> Father
+      <input type="checkbox" name="guardian" value="Mother" /> Mother
+      <input type="checkbox" name="guardian" value="Guardian" />
+      Guardian<br /><br />
+
+      <label>Occupation:</label>
+      <input
+        type="text"
+        name="occupation"
+        placeholder="Enter occupation"
+      /><br /><br />
+
+      <label>Religion:</label>
+      <input
+        type="text"
+        name="religion"
+        placeholder="Enter religion"
+      /><br /><br />
+
+      <label>Extra-curricular Activities:</label>
+      <input
+        type="text"
+        name="activities"
+        placeholder="e.g., Sports, Music, Art"
+      /><br /><br />
+
+      <label>Hostel Required:</label>
+      <input type="radio" name="hostel" value="Yes" required /> Yes
+      <input type="radio" name="hostel" value="No" required /> No<br /><br />
+      <input type="reset" value="reset Form" />
+
+      <input type="submit" value="Submit Form" />
+    </form>
+  </body>
+</html>
