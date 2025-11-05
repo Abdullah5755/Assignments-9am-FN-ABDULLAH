@@ -1,0 +1,31 @@
+/* External CSS (Task 3 & 4) */
+body {
+  background-color: #fce4ec;
+}
+
+h1 {
+  color: darkred;
+  font-family: Georgia, serif;
+}
+
+h2 {
+  color: darkblue;
+}
+.bluee {
+  background-color: blue;
+}
+.yelloww {
+  background-color: yellow;
+}
+.greenn {
+  background-color: green;
+}
+#violett {
+  color: rgb(246, 255, 0);
+}
+#redd {
+  color: red;
+}
+#pinkk {
+  color: pink;
+}
