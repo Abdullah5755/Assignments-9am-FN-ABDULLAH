@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        height: 1000px;
+        background-color: #f0f0f0;
+      }
+
+      .relative-box {
+        position: relative;
+        background-color: lightblue;
+        width: 150px;
+        height: 150px;
+        top: 50px;
+        left: 50px;
+      }
+
+      .absolute-box {
+        position: absolute;
+        background-color: lightgreen;
+        width: 150px;
+        height: 150px;
+        top: 200px;
+        left: 250px;
+      }
+
+      .fixed-box {
+        position: fixed;
+        background-color: lightcoral;
+        width: 150px;
+        height: 150px;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Position Examples</h2>
+    <div class="relative-box">Lorem, ipsum.</div>
+    <div class="absolute-box">Lorem, ipsum.</div>
+    <div class="fixed-box">Lorem, ipsum.</div>
+  </body>
+</html>
