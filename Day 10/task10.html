@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: rgb(166, 166, 166);
+  color:white ;
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 250px 1fr; 
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+    "header header"
+    "nav    about"
+    "nav    skills"
+    "experience experience"
+    "projects projects"
+    "footer footer";
+
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Clean professional card style */
+.header, .nav, .about, .skills, .projects, .experience, .footer {
+  background: #007bff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Areas */
+.header { grid-area: header; }
+.nav { grid-area: nav; display: flex; flex-direction: column; gap: 10px; }
+.about { grid-area: about; }
+.skills { grid-area: skills; }
+.projects { grid-area: projects; }
+.experience { grid-area: experience; }
+.footer { grid-area: footer; }
+
+/* Styling */
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #000000;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="portfolio">
+
+  <header class="header" id="home">
+    <h1 style="color: aquamarine;">Abdullah U</h1>
+    <p style="color: black;">Entry-level IT Candidate</p>
+    <p>📞 7094659438 | ✉️ abdullahbinumar7777@gmail.com</p>
+    <p>📍 Perambalur, Tamil Nadu, India</p>
+  </header>
+
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="about" id="about">
+    <h2 style="color: aqua;">About Me</h2>
+    <p>
+      Entry-level IT candidate with strong interest in technology, system support, 
+      and real-world problem solving. Completed academic and internship projects  
+      demonstrating teamwork and practical understanding.
+    </p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 style="color: aqua;">Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>SQL</li>
+      <li>HTML & CSS</li>
+      <li>Cloud Basics</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 style="color: aqua;">Projects</h2>
+
+    <h3 style="color: black;"><b>E-Commerce Website</b></h3>
+    <p >Front-end using HTML, CSS, JS. Fully responsive.</p>
+
+    <h3 style="color: black;"><b>Blockchain Secure Storage System</b></h3>
+    <p>Python, Flask, AES-256, IPFS, blockchain audit logging.</p>
+  </section>
+
+  <section class="experience" id="experience">
+    <h2 style="color: aqua;">Experience</h2>
+
+    <h3>Front-End Intern – Edunet Foundation</h3>
+    <p>Built responsive pages using HTML, CSS, JS.</p>
+
+    <h3>AI & Cloud Intern – IBM SkillsBuild</h3>
+    <p>Worked on AI chatbot and cloud concepts.</p>
+  </section>
+
+  <footer class="footer" id="contact">
+    <p><strong style="color: aqua;">Languages:</strong> English, Tamil</p>
+    <p><strong style="color: aqua;">Strengths:</strong> Thinking, adaptability, quick learning</p>
+  </footer>
+
+</div>
+
+    </div>
+  </body>
+</html>
