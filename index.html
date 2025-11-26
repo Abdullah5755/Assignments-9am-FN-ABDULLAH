@@ -4,30 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
     <style>
-      body {
-        background-color: bisque;
-        height: 2000px;
+      .container {
+        background-color: burlywood;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
       }
+      .box {
+        background-color: blue;
+        width: 300px;
 
-      .css p {
-        display: inline-block;
-        width: 200px;
-        height: 100px;
-        top: 0;
-        color: black;
-        background-color: aqua;
-        padding: 10px;
+        border: 2px solid white;
+      }
+      .box1 {
+      }
+      .box2 {
+      }
+      .box3 {
+        align-self: flex-end;
+      }
+      .box4 {
       }
     </style>
   </head>
   <body>
-    <div class="css">
-      <p>Sticky paragraph</p>
-<img src="/download.jpg" alt="">
-      <!-- Add content -->
-      Scroll to see sticky working...
-   
+    <div class="container">
+      <div class="box box1">15</div>
+      <div class="box box2">2</div>
+      <div class="box box3">3</div>
+      <div class="box box4">4</div>
+    </div>
   </body>
 </html>
