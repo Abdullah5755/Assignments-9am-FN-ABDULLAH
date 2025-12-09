@@ -1,7 +1,4 @@
-console.log("Abdullah");
-function rgb() {
-  document.getElementById("ba").innerText = "naandhaanda";
-}
-function bb() {
-  document.getElementById("ba").style.background = "blue";
+let color = ["abd", "bba"];
+for (let i of color) {
+  console.log(i);
 }
